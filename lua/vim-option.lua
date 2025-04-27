@@ -23,3 +23,10 @@ vim.keymap.set("n", "<C-->", function()
         vim.o.guifont = name .. ":h" .. (tonumber(size) - 1)
     end
 end)
+
+
+--adding color for line numbers
+vim.api.nvim_set_hl(0, 'LineNrAbove', { fg='#51B3EC', bold=true })
+vim.api.nvim_set_hl(0, 'LineNr', { fg='#E4D00A', bold=true })
+vim.api.nvim_set_hl(0, 'LineNrBelow', { fg='#FB508F', bold=true })
+
